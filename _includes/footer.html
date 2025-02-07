@@ -6,9 +6,10 @@
       <tr>This page online <code>{{ site.url }}{{ page.url }}</code></tr>
       <tr>
         <td>
-          <a href="/"><em>{{ site.author }}</em></a> &middot; <a href="mailto:{{ site.email }}"><em>{{ site.email }}</em></a>
+          <a href="/"><em>{{ site.author }}</em></a> &middot;
+          <a href="mailto:{{ site.email }}"><em>{{ site.email }}</em></a>
         </td>
-        <td align="right">Last updated: {{ page.updated }}</td>
+        <td align="right">Last updated: {{ page.date | date: date_to_rfc822 }}</td>
       </tr>
     </tb>
   </table>
