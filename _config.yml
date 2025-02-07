@@ -27,3 +27,10 @@ email: sebbas@sebbas.org
 
 timezone: Europe/Madrid
 google_analytics_tracking_id: UA-39520634-1
+
+header_pages:
+  - index.html
+  - essays/index.md
+  - tutorials/index.md
+  - about/index.md
+  - contact/index.md
