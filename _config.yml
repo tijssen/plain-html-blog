@@ -1,5 +1,7 @@
 permalink: /:title/
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 title: sebbas.org
@@ -27,6 +29,8 @@ email: sebbas@sebbas.org
 
 timezone: Europe/Madrid
 google_analytics_tracking_id: UA-39520634-1
+
+favicon: "favicon.ico"
 
 header_pages:
   - index.html
