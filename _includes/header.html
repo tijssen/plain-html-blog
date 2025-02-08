@@ -1,16 +1,17 @@
 <header>
 
   {%- assign page_paths = site.header_pages | default: default_paths -%}
-  <h1>{{ site.title | escape }}</h1>
+  <a href="{{ "/" | relative_url }}" style="text-decoration:none">
+    <h1>{{ site.title | escape }}</h1>
+  </a>
 
   <p>
-    <a href="{{ "/" | relative_url }}">Home</a>
     {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
-      {% if my_page.title %}
-      &middot;
+      {%- if my_page.title -%}
       <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-      {% endif %}
+      {%- unless forloop.last -%}{{ " &middot;" }}{%- endunless -%}
+      {%- endif -%}
     {%- endfor -%}
   </p>
   <hr />
