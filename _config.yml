@@ -1,37 +1,28 @@
-permalink: /:title/
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-title: sebbas.org
-url: https://sebbas.org
+title: Your awesome title
+author: GitHub User
+email: your-email@domain.com
+url: https://www.domain.com
 baseurl: "/plain-html-blog"
-description: "Personal website of Sebastián"
-author: Sebastián
-twitter: sebbas
-stackoverflow: 1480784/sebbas
-trello: sebbas
-googleplay: sebbas
-vimeo: sebbas
-linkedin: 
-bitbucket: sebbas
-goodreads: sebbas
-delicious: sebbas
-hackernews: sebbas
-medium: sebbas
-youtube: UCiU3oTGKL4GDr5xgK_EMjnQ
-500px: sebbas
-irc: sebbas
-ircchannel: blendercoders # a channel that you are frequenting
-username: sebbas
-email: sebbas@sebbas.org
 
-timezone: Europe/Madrid
-google_analytics_tracking_id: UA-39520634-1
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Write an awesome description for your new site here. You can edit this line
+  in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 
 favicon: "plain-html-blog/favicon.ico"
 
+# Build settings
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme-specific settings
+
+# If you want to link only specific pages in your header, use this and add the
+# path to the pages in order as they should show up.
 header_pages:
   - index.html
   - essays/index.md
