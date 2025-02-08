@@ -6,8 +6,13 @@
       <tr>This page online: <code>{{ page.url | absolute_url }}</code></tr>
       <tr>
         <td>
-          <em>{{ site.author }}</em> &middot;
-          <a href="mailto:{{ site.email }}"><em>{{ site.email }}</em></a>
+          <em>
+            <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+              RSS feed
+            </a> 
+            &middot; {{ site.author }} &middot;
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </em>
         </td>
 	  <!--<td align="right">Last updated: {{ page.date }}</td>-->
       </tr>
