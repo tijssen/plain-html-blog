@@ -11,7 +11,7 @@
           <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </em>
       </td>
-	  <td align="right">Last updated: {{ site.time | date_to_rfc822 }}</td>
+	  <td align="right">Last updated: {{ site.time | date: "+%Y-%m-%d %T %z" }}</td>
     </tr>
   </table>
 
