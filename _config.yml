@@ -30,7 +30,7 @@ email: sebbas@sebbas.org
 timezone: Europe/Madrid
 google_analytics_tracking_id: UA-39520634-1
 
-favicon: "favicon.ico"
+favicon: "plain-html-blog/favicon.ico"
 
 header_pages:
   - index.html
