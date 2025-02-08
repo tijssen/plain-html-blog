@@ -16,7 +16,9 @@
   {% endcomment %}
   {%- feed_meta -%}
 
-  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}">
+  {%- if site.favicon -%}
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}">
+  {%- endif -%}
   <style type="text/css"></style>
 
 </head>

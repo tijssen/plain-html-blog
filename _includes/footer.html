@@ -6,12 +6,12 @@
     <tr>
       <td>
         <em>
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">RSS feed</a>
+          <a href="{{ site.feed.path | default: "feed.xml" | absolute_url }}">RSS feed</a>
           &middot; {{ site.author }} &middot;
           <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </em>
       </td>
-	  <td align="right">Last updated: {{ site.time | date: "+%Y-%m-%d %T %z" }}</td>
+	  <td align="right">Last updated: {{ site.time | date: "%Y-%m-%d %T %z" }}</td>
     </tr>
   </table>
 
