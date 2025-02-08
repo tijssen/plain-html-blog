@@ -6,7 +6,7 @@ plugins:
 
 title: sebbas.org
 url: https://sebbas.org
-baseurl: ""
+baseurl: "/plain-html-blog"
 description: "Personal website of Sebastián"
 author: Sebastián
 twitter: sebbas
